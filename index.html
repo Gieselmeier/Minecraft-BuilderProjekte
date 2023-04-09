@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meine Website</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      #background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("background-image.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      
+      #login-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      
+      #login-box h1 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      #login-box input[type="password"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+      
+      #login-box input[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #000;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      
+      #login-box input[type="submit"]:hover {
+        background-color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="background"></div>
+    <div id="login-box">
+      <h1>Bitte Passwort eingeben</h1>
+      <form action="subpages.html">
+        <input type="password" name="password" placeholder="Passwort">
+        <input type="submit" value="Login">
+      </form>
+    </div>
+  </body>
+</html>

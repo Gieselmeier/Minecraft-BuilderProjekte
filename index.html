@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>Meine Website</title>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="styles.css">
     <style>
       body {
         margin: 0;
@@ -66,13 +69,22 @@
     </style>
   </head>
   <body>
-    <div id="background"></div>
-    <div id="login-box">
-      <h1>Bitte Passwort eingeben</h1>
-      <form action="subpages.html">
-        <input type="password" name="password" placeholder="Passwort">
-        <input type="submit" value="Login">
-      </form>
-    </div>
-  </body>
+    <div class="container">
+		<img src="background.jpg" alt="Hintergrundbild" class="background-image">
+		<div class="login-box">
+			<h2>Anmelden</h2>
+			<form action="anschlagsbrett.html" method="post">
+				<div class="user-box">
+					<input type="text" name="username" required="">
+					<label>Benutzername</label>
+				</div>
+				<div class="user-box">
+					<input type="password" name="password" required="">
+					<label>Passwort</label>
+				</div>
+				<input type="submit" name="" value="Anmelden">
+			</form>
+		</div>
+	</div>
+</body>
 </html>

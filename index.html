@@ -4,6 +4,7 @@
     <title>Meine Website</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
     <style>
       body {
         margin: 0;
@@ -68,14 +69,37 @@
     </style>
   </head>
   <body>
-    <div id="background"></div>
-    <div id="login-box">
-      <h1>Login</h1>
-      <form action="anschlagsbrett.html" method="post">
-        <input type="password" name="password" placeholder="Passwort" required>
-        <input type="submit" value="Anmelden">
-      </form>
+    <div class="container">
+      <img src="background-image.jpg" alt="Menu" class="background-image">
+      <div class="login-box">
+        <h2>Anmelden</h2>
+        <form onsubmit="return validatePassword()" action="anschlagsbrett.html" method="post">
+          <div class="user-box">
+            <input type="password" name="password" id="password" required="">
+            <label>Passwort</label>
+          </div>
+          <input type="submit" value="Anmelden">
+        </form>
+      </div>
     </div>
+
+    
+    
+    
+    
+    <script>
+      function validatePassword() {
+        const passwordInput = document.getElementById("password");
+        const password = passwordInput.value;
+        if (password === "Blauerdrache") {
+          return true;
+        } else {
+          alert("Falsches Passwort!");
+          return false;
+        }
+      }
+    </script>
+    
   </body>
 </html>
 

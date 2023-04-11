@@ -7,6 +7,19 @@
     
     <link rel="stylesheet" href="styles.css">
     <style>
+      
+      .container {
+        position: relative;
+    }
+    
+    #checkboxes {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+      
+      
       body {
   margin: 0;
   padding: 0;
@@ -148,7 +161,7 @@
       function validatePassword() {
         const passwordInput = document.getElementById("password");
         const password = passwordInput.value;
-        if (password === "Blauerdrache") {
+        if (password === "Blauerdrache", "zzz") {
           return true;
         } else {
           alert("Falsches Passwort!");

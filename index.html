@@ -9,47 +9,30 @@
       body {
         margin: 0;
         padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: url("background-image.jpg");
+        background-size: cover;
+        background-position: center;
       }
-      #background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("background-image.jpg");
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-}
-      .container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
-      .container img {
-        max-width: 100%;
-        height: auto;
-      }
-      .login-box {
+
+      #login-box {
         max-width: 90%;
         padding: 20px;
         background-color: rgba(255, 255, 255, 0.8);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        margin-top: 20px;
-        margin-bottom: 20px;
-        display: inline-block;
-        text-align: center;
       }
-      .login-box h1 {
+
+      #login-box h1 {
         font-size: 32px;
         text-align: center;
         margin-bottom: 20px;
       }
-      .login-box input[type="password"] {
+
+      #login-box input[type="password"] {
         display: block;
-        margin: 0 auto;
         width: 100%;
         padding: 10px;
         margin-bottom: 20px;
@@ -58,9 +41,9 @@
         background-color: rgba(255, 255, 255, 0.8);
         box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
       }
-      .login-box input[type="submit"] {
+
+      #login-box input[type="submit"] {
         display: block;
-        margin: 0 auto;
         width: 100%;
         padding: 10px;
         border-radius: 5px;
@@ -71,48 +54,19 @@
         font-weight: bold;
         cursor: pointer;
       }
-      .login-box input[type="submit"]:hover {
+
+      #login-box input[type="submit"]:hover {
         background-color: #333;
       }
     </style>
   </head>
   <body>
-    <div id="background"></div>
-    <div class="container">
-      <img src="Images/Home.png" alt="Menü" class="background-image">
-      <div class="login-box">
-        <h1>Login</h1>
-        <form onsubmit="return validatePassword()" action="Anschlagsbrett.html" method="post">
-          <input type="password" name="password" id="password" placeholder="Passwort" required>
-          <input type="submit" value="Anmelden">
-        </form>
-      </div>
-    </div>
-    <script>
-      function validatePassword() {
-        const passwordInput = document.getElementById("password");
-        const password = passwordInput.value;
-        if (password === "Blauerdrache") {
-          return true;
-        } else {
-          alert("Falsches Passwort!");
-          return false;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="background"></div>
     <div id="login-box">
       <h1>Login</h1>
       <form onsubmit="return validatePassword()" action="Anschlagsbrett.html" method="post">
         <input type="password" name="password" id="password" placeholder="Passwort" required>
         <input type="submit" value="Anmelden">
       </form>
-    </div>
-    <div class="container">
-      <img src="Images/Home.png" alt="Menü" class="background-image">
-      <div class="login-box"></div>
     </div>
 
     <script>

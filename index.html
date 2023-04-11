@@ -23,15 +23,61 @@
       }
       
       #login-box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 400px;
-        padding: 20px;
-        background-color: rgba(255, 255, 255, 0.8);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 250px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#password-box {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#password-box h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#password-box input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#password-box input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#password-box input[type="submit"]:hover {
+  background-color: #333;
+}
+      
       
       #login-box h1 {
         font-size: 32px;
@@ -71,12 +117,15 @@
   <body>
     <div id="background"></div>
     <div id="login-box">
-      <h1>Login</h1>
-       <form onsubmit="return validatePassword()" action="Anschlagsbrett.html" method="post">
-        <input type="password" name="password" id="password" placeholder="Passwort" required>
-        <input type="submit" value="Anmelden">
-      </form>
+  <h1>Login</h1>
+  <form onsubmit="return validatePassword()" action="Anschlagsbrett.html" method="post">
+    <div id="password-box" class="password-box">
+      <h2>Passwort eingeben</h2>
+      <input type="password" name="password" id="password" placeholder="Passwort" required>
+      <input type="submit" value="Anmelden">
     </div>
+  </form>
+</div>
     <div class="container">
       <img src="Images/Home.png" alt="Menü" class="background-image">
       <div class="login-box">

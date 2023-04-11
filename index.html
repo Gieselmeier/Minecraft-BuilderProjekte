@@ -9,6 +9,9 @@
     <style>
       
       
+     html {
+  overflow: hidden;
+}
       body {
   margin: 0;
   padding: 0;
@@ -142,11 +145,13 @@
       function validatePassword() {
         const passwordInput = document.getElementById("password");
         const password = passwordInput.value;
-        if (password === "Blauerdrache", "zzz") {
+        const allowedPasswords = ["Blauerdrache", "zzz"];
+        if (allowedPasswords.includes(password)) {
           return true;
         } else {
           alert("Falsches Passwort!");
-          return false;
+    window.location.href = "falsches-passwort.html"; // Ändern Sie die URL entsprechend der gewünschten Seite.
+    return false;
         }
       }
     </script>

@@ -10,215 +10,93 @@
     <style>
       
       input[type="checkbox"] {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-}
+        position: absolute;
+        left: 20px;
+        top: 20px;
+      }
       
-     .container {
-  position: relative;
-}
+      .container {
+        position: relative;
+      }
       
       .box {
-  width: 25%;
-  height: 100px;
-  background-color: blue;
-  float: left;
-  box-sizing: border-box;
-  border: 1px solid black;
-  margin: 10px;
-}
+        width: 25%;
+        height: 100px;
+        background-color: blue;
+        float: left;
+        box-sizing: border-box;
+        border: 1px solid black;
+        margin: 10px;
+      }
 
-.checkbox {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  /* Andere Stile, die Sie möchten */
-}
+      .checkbox {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        /* Andere Stile, die Sie möchten */
+      }
       
       
-    html {
-  touch-action: pan-x pan-y;
-  -ms-content-zooming: none;
-  touch-action: pan-x pan-y;
-  user-zoom: fixed;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url("Images/MN.png");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  background-repeat: no-repeat;
-}
-
-#background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("Images/MN.png");
-  background-size: cover;
-  background-position: center;
-}
-
-#login-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  height: 30%;
-  padding: 20px;
-  border-radius: 15px;
-  background-color: rgba(102, 102, 102, 0.8);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-#password-box {
-  position: relative;
-  width: 80%;
-  height: 80%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#password-box h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-#password-box input[type="password"] {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
-#password-box input[type="submit"] {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  background-color: #000;
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-#password-box input[type="submit"]:hover {
-  background-color: #333;
-}
-
-#login-box h1 {
-  font-size: 32px;
-  text-align
       html {
-  touch-action: pan-x pan-y;
-  -ms-content-zooming: none;
-  touch-action: pan-x pan-y;
-  user-zoom: fixed;
-  max-width: 100%;
-  overflow-x: hidden;
-}
+        touch-action: pan-x pan-y;
+        -ms-content-zooming: none;
+        touch-action: pan-x pan-y;
+        user-zoom: fixed;
+        max-width: 100%;
+        overflow-x: hidden;
+      }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url("Images/MN.png");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  background-repeat: no-repeat;
-}
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url("Images/MN.png");
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        background-repeat: no-repeat;
+      }
 
-#background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("Images/MN.png");
-  background-size: cover;
-  background-position: center;
-}
+      #background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("Images/MN.png");
+        background-size: cover;
+        background-position: center;
+      }
 
-#login-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  height: 250px;
-  padding: 20px;
-  border-radius: 15px;
-  background-color: rgba(102, 102, 102, 0.8);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
+      #login-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 250px;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: rgba(102, 102, 102, 0.8);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
 
-#password-box {
-  position: relative;
-  width: 80%;
-  height: 80%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+      #password-box {
+        position: relative;
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
-#password-box h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
+      #password-box h2 {
+        margin-bottom: 20px;
+        text-align: center;
+      }
 
-#password-box input[type="password"] {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
-#password-box input[type="submit"] {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  background-color: #000;
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-#password-box input[type="submit"]:hover {
-  background-color: #333;
-}
-
-#login-box h1 {
-  font-size: 32px;
-  text-align
-      
-      #login-box input[type="password"] {
+      #password-box input[type="password"] {
         display: block;
         width: 100%;
         padding: 10px;
@@ -228,8 +106,8 @@ body {
         background-color: rgba(255, 255, 255, 0.8);
         box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
       }
-      
-      #login-box input[type="submit"] {
+
+      #password-box input[type="submit"] {
         display: block;
         width: 100%;
         padding: 10px;
@@ -237,14 +115,7 @@ body {
         border: none;
         background-color: #000;
         color: #fff;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-      }
-      
-      #login-box input[type="submit"]:hover {
-        background-color: #333;
-      }
+        font-size: 16px
     </style>
   </head>
   <body>

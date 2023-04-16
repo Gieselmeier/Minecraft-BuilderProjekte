@@ -123,6 +123,17 @@
     <div id="login-box">
   <h1>Login</h1>
   <form onsubmit="return validatePassword()" action="anschlagsbrett.html" method="post">
+    
+    <div id="password-box" class="password-box">
+  <form>
+    <input type="password" id="password" name="password">
+    <button type="button" onclick="validatePassword()">Einloggen</button>
+  </form>
+</div>
+    
+    
+    
+    
     <div id="password-box" class="password-box">
      
       <input type="password" name="password" id="password" placeholder="Passwort" required>

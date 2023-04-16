@@ -2,20 +2,41 @@
 <html>
   <head>
     <title>Falsches Passwort</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    
+    <link rel="stylesheet" href="styles.css">
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-        
-        background-size: cover;
-        background-position: center;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        background-color: black;
-          }
-      #background {
+      
+      input[type="checkbox"] {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+      
+     .container {
+  position: relative;
+}
+
+.checkbox {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  /* Andere Stile, die Sie möchten */
+}
+      
+      
+    html {
+  touch-action: pan-x pan-y;
+  -ms-content-zooming: none;
+  touch-action: pan-x pan-y;
+  user-zoom: fixed;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+#background {
   position: absolute;
   top: 0;
   left: 0;
@@ -25,48 +46,171 @@
   background-size: cover;
   background-position: center;
 }
+
+#login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(102, 102, 102, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#password-box {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#password-box h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#password-box input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#password-box input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#password-box input[type="submit"]:hover {
+  background-color: #333;
+}
+
+#login-box h1 {
+  font-size: 32px;
+  text-align
       html {
-         
   touch-action: pan-x pan-y;
   -ms-content-zooming: none;
   touch-action: pan-x pan-y;
   user-zoom: fixed;
   max-width: 100%;
   overflow-x: hidden;
+}
 
-      }
-      #image-container img {
-        display: block;
-        margin: 0 auto;
-      }
-      #text-box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 400px;
-        height: 250px;
-        padding: 20px;
-        border: 2px solid white;
-        border-radius: 15px;
-        background-color: rgba(102, 102, 102, 0.8);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      #text-box h1 {
-        font-size: 32px;
-        text-align: center;
-        margin-bottom: 20px;
-        color: white;
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("Images/YouDied.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("Images/YouDied.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(102, 102, 102, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#password-box {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#password-box h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#password-box input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#password-box input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#password-box input[type="submit"]:hover {
+  background-color: #333;
+}
       }
     </style>
   </head>
   <body>
-    <div id="image-container">
-      <img src="Images/YouDied.png">
+    <div id="background"></div>
+    <div id="login-box">
+  <h1>Login</h1>
+  <form onsubmit="return validatePassword()" action="anschlagsbrett.html" method="post">
+    <div id="password-box" class="password-box">
+     
+      <input type="password" name="password" id="password" placeholder="Passwort" required>
+      <input type="submit" value="Anmelden">
     </div>
+  </form>
+</div>
+    <div class="container">
+      <!-- <img src="Images/Screenshot 2023-04-11 175729.png" alt="Menü" class="background-image"> -->
+      <div class="login-box">
+    
   </body>
 </html>

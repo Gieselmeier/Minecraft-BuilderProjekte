@@ -139,8 +139,10 @@
         const passwordInput = document.getElementById("password");
         const password = passwordInput.value;
         const allowedPasswords = ["Blauerdrache", "zzz", "69"];
-        if (allowedPasswords.includes(password)) {
-          return true;
+        if (allowedPasswords.includes(password))
+          {
+            window.location.href = "anschlagsbrett.html";
+            return true;
         } else {
           alert("Falsches Passwort!");
     window.location.href = "falsches-passwort.html"; 

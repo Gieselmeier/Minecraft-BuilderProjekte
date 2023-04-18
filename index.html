@@ -142,12 +142,15 @@
         const allowedPasswords = ["Blauerdrache", "zzz", "69"];
         if (allowedPasswords.includes(password))
           {
+            alert("Nice!");
             window.location.href = "Minecraft-BuilderProjekte/anschlagsbrett.html";
             return true;
-        } else {
+        } 
+        else 
+        {
           alert("Falsches Passwort!");
-    window.location.href = "falsches-passwort.html"; 
-    return false;
+          window.location.href = "falsches-passwort.html"; 
+          return false;
         }
       }
     </script>
